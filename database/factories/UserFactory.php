@@ -2,11 +2,16 @@
 
 namespace Database\Factories;
 
+<<<<<<< HEAD
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Laravel\Jetstream\Features;
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
@@ -21,6 +26,7 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
@@ -30,6 +36,13 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'profile_photo_path' => null,
             'current_team_id' => null,
+=======
+            'name' => fake()->name(),
+            'email' => fake()->unique()->safeEmail(),
+            'email_verified_at' => now(),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'remember_token' => Str::random(10),
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a
         ];
     }
 
@@ -38,6 +51,7 @@ class UserFactory extends Factory
      */
     public function unverified(): static
     {
+<<<<<<< HEAD
         return $this->state(function (array $attributes) {
             return [
                 'email_verified_at' => null,
@@ -64,5 +78,10 @@ class UserFactory extends Factory
                 ->when(is_callable($callback), $callback),
             'ownedTeams'
         );
+=======
+        return $this->state(fn (array $attributes) => [
+            'email_verified_at' => null,
+        ]);
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a
     }
 }

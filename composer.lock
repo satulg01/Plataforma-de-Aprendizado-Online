@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "b62515a829697c05a18890e60649eba2",
+=======
+    "content-hash": "9d6068afe3de8dc49a671f4a596a8462",
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2180,6 +2184,7 @@
             "time": "2023-08-05T12:09:49+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "livewire/livewire",
             "version": "v3.0.5",
             "source": {
@@ -2254,6 +2259,8 @@
             "time": "2023-09-16T11:51:32+00:00"
         },
         {
+=======
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.41",
             "source": {

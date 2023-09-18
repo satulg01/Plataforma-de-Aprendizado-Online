@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::middleware([
     'auth:sanctum',
@@ -26,3 +27,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+=======
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a

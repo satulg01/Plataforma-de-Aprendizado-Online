@@ -10,8 +10,12 @@
         "laravel/framework": "^10.10",
         "laravel/jetstream": "^4.0",
         "laravel/sanctum": "^3.2",
+<<<<<<< HEAD
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0"
+=======
+        "laravel/tinker": "^2.8"
+>>>>>>> 238e8ef7b6f7597915af1048a7528d60d08bdf5a
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
