@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CourseController;
+ 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +26,14 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+	Route::resource('courses', CourseController::class)->names([
+		'index' 	=> 'courses.index',
+		'create' 	=> 'courses.create',
+		'store' 	=> 'courses.store',
+		'show' 		=> 'courses.show',
+		'edit' 		=> 'courses.edit',
+		'update' 	=> 'courses.update',
+		'destroy' 	=> 'courses.destroy',
+	]);
 });
