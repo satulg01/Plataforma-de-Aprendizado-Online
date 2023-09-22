@@ -29,10 +29,10 @@ Route::middleware([
 
 	Route::resource('courses', CourseController::class)->names([
 		'index' 	=> 'courses.index',
-		'create' 	=> 'courses.create',
-		'store' 	=> 'courses.store',
 		'show' 		=> 'courses.show',
 		'edit' 		=> 'courses.edit',
+		'create' 	=> 'courses.create',
+		'store' 	=> 'courses.store',
 		'update' 	=> 'courses.update',
 		'destroy' 	=> 'courses.destroy',
 	]);

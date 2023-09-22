@@ -32,6 +32,7 @@
                                     <th scope="col" class="px-6 py-4">#</th>
                                     <th scope="col" class="px-6 py-4">Name</th>
                                     <th scope="col" class="px-6 py-4">Value</th>
+                                    <th scope="col" class="px-6 py-4"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,6 +41,7 @@
 										<td class="whitespace-nowrap px-6 py-4 font-medium">{{ $course->id }}</td>
 										<td class="whitespace-nowrap px-6 py-4">{{ $course->name }}</td>
 										<td class="whitespace-nowrap px-6 py-4">{{ $course->value }}</td>
+										<td class="whitespace-nowrap px-6 py-4"><x-a-primary href="/courses/{{ $course->id }}/edit" wire:navigate>Editar</x-a-primary></td>
 									</tr>
 								@endforeach
                             </tbody>
